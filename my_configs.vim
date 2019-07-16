@@ -10,6 +10,8 @@ set expandtab ts=4 sw=4 ai
 let g:ale_completion_enabled = 1
 let g:ale_fix_on_save = 1
 
+" set pyxversion=3
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Nerd Tree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -38,3 +40,8 @@ call deoplete#custom#option({
             \ 'auto_complete_delay': 200,
             \ 'smart_case': v:true,
             \ })
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Commentary
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd FileType c,cpp,cs,java setlocal commentstring=//\ %s
